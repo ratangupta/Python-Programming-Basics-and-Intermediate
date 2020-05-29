@@ -1,6 +1,7 @@
 # Task of a spider is to go to a website, 
 # find all the links on the website 
 # and then go to all those links
+# need to fix an error
 
 from multiprocessing import Pool
 import bs4 as bs
