@@ -24,3 +24,16 @@ class Blob:
 
         if self.y < 0: self.y = 0
         elif self.y > self.y_boundary: self.y = self.y_boundary
+
+    def check_bounds(self):
+        if self.x < 0: self.x = 0
+        elif self.x > self.x_boundary: self.x = self.x_boundary
+        
+        if self.y < 0: self.y = 0
+        elif self.y > self.y_boundary: self.y = self.y_boundary
+
+    def __repr__(self):
+        return 'Blob({}, {}, ({}, {}))'.format(self.color, self.size, self.x, self.y)
+
+    def __str__(self):
+        return "Color: {} Size {}. Located at {}, {}".format(self.color, self.size, self.x, self.y)                                         
